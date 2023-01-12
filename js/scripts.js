@@ -73,7 +73,7 @@ playButton.addEventListener('click',
 
         } else if (difficulty == 'medium') {
 
-            myCicle(1, 81, medium, 68);
+            myCicle(1, 81, medium, 65);
 
             myRandomNumberBomb(1, 81, bomb);
             
