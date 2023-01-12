@@ -33,7 +33,7 @@ containerPoints.classList.add('none');
 const myPoints = document.getElementById('my-points');
 
 //contatore dei punti 
-let counter = 0
+// let counter = 0
 
 //end game
 const endGameCont = document.getElementById('end-game');
@@ -115,6 +115,11 @@ function myCicle (val1, val2, val3) {
     gridContainer.innerHTML = '';
 
     bomb.length = 0;
+
+    //contatore dei punti 
+    let counter = 0;
+
+    myPoints.innerHTML = counter;
 
     for (let i = val1; i <= val2; i++) {
 
