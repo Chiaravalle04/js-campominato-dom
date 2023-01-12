@@ -163,8 +163,6 @@ function myCicle (val1, val2, val3) {
                     }
                     
                     myElement.classList.toggle('none');
-        
-                    console.log(i);
 
                 }
     
@@ -197,8 +195,6 @@ function myRandomNumberBomb (num1, num2, myArray) {
         };
     
         myArray.push(myRandomNumber);
-    
-        console.log(myRandomNumber)
     
     };
 
