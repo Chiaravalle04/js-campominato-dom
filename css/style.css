@@ -1,0 +1,142 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font */
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Regole Generali */
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.cell-color {
+    background-color: #D63AB4 !important;
+}
+
+.bomb {
+    background-color: red !important;
+}
+
+/* Header */
+header {
+    height: 4.5rem;
+    background-color: #080DE8;
+    padding: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1 {
+    color: #fff;
+    font-weight: 500;
+}
+
+header button {
+    display: inline-block;
+    width: 6rem;
+    height: 2rem;
+    border-color: #08D1FF;
+    border-radius: 0.5rem;
+    background-color: #08D1FF;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header select {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+select:focus-visible {
+    outline: none;
+}
+
+/* Main */
+main {
+    height: calc(100vh - 6.5rem);
+    background-color: #08D1FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main p {
+    font-size: 1.3rem;
+}
+
+#grid-container {
+    width: calc((100vh - 6.5rem) - 5vh);
+    height: calc((100vh - 6.5rem) - 5vh);
+    background-color: fuchsia;
+    flex-wrap: wrap;
+}
+
+#grid-container .cell {
+    width: calc(((100vh - 6.5rem) - 5vh) / 10);
+    height: calc(((100vh - 6.5rem) - 5vh) / 10);
+    background-color: #080DE8;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#grid-container .cell-medium {
+    width: calc(((100vh - 6.5rem) - 5vh) / 9);
+    height: calc(((100vh - 6.5rem) - 5vh) / 9);
+    background-color: #080DE8;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#grid-container .cell-hard {
+    width: calc(((100vh - 6.5rem) - 5vh) / 7);
+    height: calc(((100vh - 6.5rem) - 5vh) / 7);
+    background-color: #080DE8;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    height: 2rem;
+    background-color: #080DE8;
+    text-align: center;
+}
+
+footer > p {
+    line-height: 2rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+footer p a {
+    color: #08D1FF;
+}
