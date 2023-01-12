@@ -67,19 +67,19 @@ playButton.addEventListener('click',
 
         if (difficulty == 'easy') {
 
-            myCicle(1, 100, easy);
+            myCicle(1, 100, easy, 84);
 
             myRandomNumberBomb(1, 100, bomb);
 
         } else if (difficulty == 'medium') {
 
-            myCicle(1, 81, medium);
+            myCicle(1, 81, medium, 68);
 
             myRandomNumberBomb(1, 81, bomb);
             
         } else {
 
-            myCicle(1, 49, hard);
+            myCicle(1, 49, hard, 33);
 
             myRandomNumberBomb(1, 49, bomb);
 
@@ -102,7 +102,6 @@ playAgain.addEventListener('click',
 
 );
 
-
 /*
 
 ----- FUNZIONI ------
@@ -110,11 +109,14 @@ playAgain.addEventListener('click',
 */
 
 // funzione ciclo
-function myCicle (val1, val2, val3) {
+function myCicle (val1, val2, val3, val4) {
 
     gridContainer.innerHTML = '';
 
     bomb.length = 0;
+
+    // contatore vittoria
+    let verifyVictory = 0
 
     //contatore dei punti 
     let counter = 0;
@@ -138,6 +140,8 @@ function myCicle (val1, val2, val3) {
         myCell.addEventListener('click',
     
             function () {
+
+                verifyVictory++;
 
                 if (verify == 0) {
 
@@ -164,6 +168,10 @@ function myCicle (val1, val2, val3) {
                         counter++;
     
                         myPoints.innerHTML = counter;
+
+                    } else if (verifyVictory == val4) {
+
+                        alert('Non so come ma Hai vinto, CONGRATULAZIONI!')
 
                     }
                     
